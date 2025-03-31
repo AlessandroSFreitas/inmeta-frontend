@@ -11,4 +11,4 @@ export default defineNuxtConfig({
       apiUrl: process.env.API_URL,
     },
   },
-})
+});

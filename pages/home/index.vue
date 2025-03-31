@@ -86,6 +86,7 @@ const paginatedProducts = computed(() => {
 const totalPages = computed(() => Math.ceil(products.value.length / itemsPerPage));
 
 const config = useRuntimeConfig();
+const apiUrl = config.public.apiUrl;
 
 function changePage(page) {
     currentPage.value = page;
@@ -97,7 +98,7 @@ function editProduct(product) {
 
 async function getAllProducts() {
     try {
-        const response = await fetch(config.public.apiUrl + '/api/products', {
+        const response = await fetch('/api/products', {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' },
         });

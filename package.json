@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "dotenv": "^16.4.7",
+    "http-proxy-middleware": "^3.0.3",
     "nuxt": "^3.14.1592",
     "swiper": "^11.2.6",
     "vue": "latest",

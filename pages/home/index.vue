@@ -98,7 +98,7 @@ function editProduct(product) {
 
 async function getAllProducts() {
     try {
-        const response = await fetch('/api/products', {
+        const response = await fetch(`${config.public.apiUrl}/api/products`, {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' },
         });

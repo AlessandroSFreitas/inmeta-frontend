@@ -88,7 +88,7 @@
   onMounted(async () => {
     const productId = route.params.id;
     try {
-        const response = await fetch(config.public.apiUrl + `/api/products/${productId}`, {
+        const response = await fetch(`${config.public.apiUrl}/api/products/${productId}`, {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' },
         });

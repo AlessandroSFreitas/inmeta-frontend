@@ -102,7 +102,7 @@
   async function handleSubmit() {
     const productId = route.params.id;
     try {
-      const response = await fetch(config.public.apiUrl + `/api/products/${productId}`, {
+      const response = await fetch(`${config.public.apiUrl}/api/products/${productId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -130,7 +130,7 @@
   async function handleDelete() {
     const productId = route.params.id;
     try {
-        const response = await fetch(config.public.apiUrl + `/api/products/${productId}`, {
+        const response = await fetch(`${config.public.apiUrl}/api/products/${productId}`, {
             method: 'DELETE',
             headers: { 'Content-Type': 'application/json' },
         });

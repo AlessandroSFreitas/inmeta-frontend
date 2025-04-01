@@ -56,7 +56,7 @@ const handleSubmit = async () => {
     }
 
     try {
-        const response = await fetch(config.public.apiUrl + '/api/auth/reset_password', {
+        const response = await fetch(`${config.public.apiUrl}/api/auth/reset_password`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

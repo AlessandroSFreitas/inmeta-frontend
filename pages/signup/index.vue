@@ -49,7 +49,7 @@ const config = useRuntimeConfig();
 
 const handleRegister = async () => {
     try {
-        const response = await fetch(config.public.apiUrl + '/api/auth/register', {
+        const response = await fetch(`${config.public.apiUrl}/api/auth/register`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ username: username.value, password: password.value }),

@@ -77,7 +77,7 @@ const config = useRuntimeConfig();
 
 async function createProduct() {
   try {
-    const response = await fetch(config.public.apiUrl + '/api/products', {
+    const response = await fetch(`${config.public.apiUrl}/api/products`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(product),
